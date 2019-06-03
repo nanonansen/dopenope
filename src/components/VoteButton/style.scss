@@ -1,0 +1,41 @@
+.vote-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid black;
+    button {
+        font-family: inherit;
+        font-weight: normal;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        outline: none;
+
+        &:nth-child(1) {
+            border-right: 1px solid black;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+@media (hover: hover) {
+    .vote-buttons {
+        button {
+            &:hover {
+                background: black;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}

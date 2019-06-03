@@ -1,13 +1,33 @@
+@font-face {
+    font-family: "Lunchtype";
+    font-weight: normal;
+    src: url(./assets/fonts/lunchtype22-regular-webfont.woff2) format("woff2"),
+        url(./assets/fonts/lunchtype22-regular-webfont.woff) format("woff"),
+        url(./assets/fonts/lunchtype22-regular-webfont.ttf) format("truetype"),
+        url(./assets/fonts/lunchtype22-regular-webfont.eot)
+            format("embedded-opentype");
+}
+@font-face {
+    font-family: "Lunchtype";
+    font-weight: bold;
+    src: url(./assets/fonts/lunchtype22-medium-webfont.woff2) format("woff2"),
+        url(./assets/fonts/lunchtype22-medium-webfont.woff) format("woff"),
+        url(./assets/fonts/lunchtype22-medium-webfont.ttf) format("truetype"),
+        url(./assets/fonts/lunchtype22-medium-webfont.eot)
+            format("embedded-opentype");
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: "Lunchtype", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }

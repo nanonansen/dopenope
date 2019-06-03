@@ -1,0 +1,117 @@
+.voted-items-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2 {
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding: 29px 16px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+        padding: 0;
+        border-bottom: 1px solid black;
+        text-transform: uppercase;
+        .item-image {
+            position: relative;
+        }
+        .item-content {
+            padding: 16px 16px 24px 16px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .vote-count {
+            text-align: center;
+            color: rgba($color: #000000, $alpha: 0.4);
+            span {
+                display: block;
+            }
+        }
+    }
+    img {
+        max-width: 100%;
+        border-bottom: 1px solid black;
+    }
+    button.next-round {
+        width: calc(100% - 16px);
+        font-size: 18px;
+        font-family: inherit;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        outline: none;
+        background: white;
+        color: black;
+        height: 64px;
+        position: fixed;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        margin: auto;
+        z-index: 2;
+        border: 1px solid black;
+        border-radius: 200px;
+        cursor: pointer;
+    }
+}
+
+span.vote-float {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid;
+    border-radius: 100px;
+    padding: 10px 32px;
+    background: white;
+    transform: translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+@media (hover: hover) {
+    button.next-round:hover {
+        background: black;
+        color: white;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .voted-items-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 96px;
+        h2 {
+            width: 100%;
+        }
+        &__item {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 25%;
+            align-items: flex-start;
+            padding: 0;
+            border-right: 1px solid black;
+
+            .item-content {
+                width: 100%;
+                padding: 16px;
+
+                text-transform: uppercase;
+            }
+
+            &:nth-child(4n + 1) {
+                border-right: none;
+            }
+        }
+        img {
+            max-width: 100%;
+            margin-right: 8px;
+        }
+        button.next-round {
+            width: 40%;
+            bottom: 16px;
+            left: 16px;
+            right: 16px;
+        }
+    }
+}

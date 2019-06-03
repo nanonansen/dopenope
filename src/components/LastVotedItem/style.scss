@@ -1,0 +1,39 @@
+.last-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+
+    img {
+        max-width: 80px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: 8px;
+    }
+    &__title span {
+        display: block;
+    }
+    &__vote-count {
+        text-align: center;
+        padding: 0 16px;
+        border-left: 1px solid rgba($color: #ffffff, $alpha: 0.1);
+        span {
+            display: block;
+        }
+    }
+}

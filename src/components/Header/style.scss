@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    padding: 24px 16px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    &__logo {
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 1px solid black;
+        border-radius: 300px;
+        background: white;
+        padding: 4px 16px;
+    }
+}
+main.overview {
+    .header {
+        top: 0;
+        padding: 24px 16px;
+        border-bottom: 1px solid black;
+        background: white;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        top: 0;
+        padding: 29px 16px;
+        border-bottom: 1px solid black;
+        background: white;
+    }
+}
